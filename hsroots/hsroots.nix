@@ -4,12 +4,12 @@
 }:
 let
   wlroots' = wlroots.overrideAttrs (o: rec {
-    version = "0.4";
+    version = "0.5.0";
     src = fetchFromGitHub {
       owner = "swaywm";
       repo = "wlroots";
       rev = version;
-      sha256 = "MXce7dPibI7+T2gmOqd66gkcXAne+2D7KsZq63zjjb8=";
+      sha256 = "2I8SaHUmpnZbosbcWrxRH3lg+/SV4/WI7+r91nyLEd4=";
     };
     mesonFlags = o.mesonFlags ++ ["-Dwerror=false"];
   });
